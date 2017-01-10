@@ -17,13 +17,13 @@ Another stores your data to redux state and connect your loaded data to your con
 
 ## Notice
 
-This is a fork and refactor of [redux-async-connect](https://github.com/Rezonans/redux-async-connect)
+This is a fork and modification of [redux-connect](https://github.com/makeomatic/redux-connect)
 
 ## Installation & Usage
 
 Using [npm](https://www.npmjs.com/):
 
-`$ npm install redux-connect -S`
+`$ npm install redux-immutable-connect -S`
 
 ```js
 import { Router, browserHistory } from 'react-router';
