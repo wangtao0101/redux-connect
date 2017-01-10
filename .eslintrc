@@ -16,7 +16,7 @@
       "imports": "never",
       "exports": "never",
       "functions": "never",
-    }]
+    }],
   },
   "settings": {
     "import/parser": "babel-eslint",

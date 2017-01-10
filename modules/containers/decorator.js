@@ -61,7 +61,7 @@ export function asyncConnect(asyncItems, mapStateToProps, mapDispatchToProps, me
 
         return {
           ...result,
-          [key]: mutableState.reduxAsyncConnect[key],
+          [key]: state.getIn(['reduxAsyncConnect', key]),
         };
       }, {});
 
