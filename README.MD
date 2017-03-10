@@ -19,6 +19,8 @@ Another stores your data to redux state and connect your loaded data to your con
 
 This is a fork and modification of [redux-connect](https://github.com/makeomatic/redux-connect)
 
+Only for Immutable State !!!!!!
+
 ## Installation & Usage
 
 Using [npm](https://www.npmjs.com/):
@@ -150,11 +152,8 @@ const render = applyRouterMiddleware(...middleware);
 This lib can be used with ImmutableJS or any other immutability lib by providing methods that convert the state between mutable and immutable data. Along with those methods, there is also a special immutable reducer that needs to be used instead of the normal reducer.
 
 ```js
-import { setToImmutableStateFunc, setToMutableStateFunc, immutableReducer as reduxAsyncConnect } from 'redux-connect';
+import { immutableReducer as reduxAsyncConnect } from 'redux-connect';
 
-// Set the mutability/immutability functions
-setToImmutableStateFunc((mutableState) => Immutable.fromJS(mutableState));
-setToMutableStateFunc((immutableState) => immutableState.toJS());
 
 // Thats all, now just use redux-connect as normal
 export const rootReducer = combineReducers({
